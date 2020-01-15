@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+h1{
+
+  color: red;
+}
+body {
+  <!-- background: black; -->
+}
+
+}
+button{
+  size:50px;
+}
+    </style>
+  </head>
+  <body>
+
+<h1>hello world</h1>
+
+<button type="button" name="button"> 0</button>
+    <script type="text/javascript">
+
+  //alert('hello world');
+
+  let just ='justus s';//let is bock scoped,
+  just= 'peter';//for let you can reasign it but ue cant re initialize it eg let just= "......
+  const blue ='kampa';// its immutable is ue cant  reasign it anywhere again
+
+  //data types
+/*
+examples include symbols, objects, NaN, undefines , number, string, bigINT
+
+*/
+
+//FUNCTIONS
+
+// functions test(){
+//
+//
+// }
+
+//es6
+//array FUNCTIONS
+const myfunction2 = (a)=>{
+  console.log(a);
+
+}
+
+//dom manipulation
+
+//GET /CREATE a dom element
+//DO something with the element
+// it manipulates what the user sees
+
+document.querySelector('h1').innerText ='this is something else';
+document.querySelector('html').style.backgroundColor = 'blue';
+
+const button = document.querySelector('button');
+let count =0;
+button.addEventListener("click", () => {
+  count++;
+  button.innerText =count;
+
+});
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
